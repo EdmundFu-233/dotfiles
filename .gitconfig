@@ -1,0 +1,30 @@
+[user]
+    name = Zhihao Fu
+    email = fuzhihao321@gmail.com
+
+[core]
+    editor = vim
+    autocrlf = input
+    pager = less -FRX
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    di = diff
+    lg = log --oneline --graph --decorate
+    amend = commit --amend
+    undo = reset HEAD~1
+    last = log -1 HEAD
+    tags = tag -l
+    branches = branch -a
+
+[color]
+    ui = auto
+
+[push]
+    default = current
+
+[init]
+    defaultBranch = main
