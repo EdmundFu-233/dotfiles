@@ -1,0 +1,11 @@
+[MASTER]
+jobs=4
+
+[MESSAGES CONTROL]
+disable=C0111,C0103,C0301
+
+[FORMAT]
+max-line-length=100
+
+[REPORTS]
+output-format=colorized
