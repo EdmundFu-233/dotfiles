@@ -1,0 +1,56 @@
+# .inputrc — Readline configuration for better CLI editing
+# Add this to your bashrc: bind -f ~/.config/inputrc
+
+# Enable vi mode for efficient editing (comment out for emacs mode)
+# set editing-mode vi
+
+# Case-insensitive tab completion
+set completion-ignore-case on
+
+# Show all completions on first tab (instead of beep)
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
+
+# Automatically add trailing slash to completed directory names
+set mark-directories on
+set mark-symlinked-directories on
+
+# Colors for completion listings
+set colored-stats on
+set visible-stats on
+
+# Search history based on what's already typed
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# Page up/down to search history
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
+
+# Up/Down arrows for history navigation
+"\eOA": previous-history
+"\eOB": next-history
+"\e[A": previous-history
+"\e[B": next-history
+
+# Faster editing: Ctrl+arrows to skip words
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+"\eOC": forward-word
+"\eOD": backward-word
+
+# Home/End keys
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+"\eOH": beginning-of-line
+"\eOF": end-of-line
+
+# Delete key
+"\e[3~": delete-char
+
+# Revert the last readline command (undo)
+"\e[Z": revert-line
+
+# Meta key bindings
+Meta-h: dump-functions
+Meta-l: dump-variables
